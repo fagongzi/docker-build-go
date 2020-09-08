@@ -6,4 +6,4 @@ RUN MAIN_VERSION=$(cat /etc/alpine-release | cut -d '.' -f 0-2) \
         echo "https://mirrors.aliyun.com/alpine/v${MAIN_VERSION}/main"; \
         echo "https://mirrors.aliyun.com/alpine/v${MAIN_VERSION}/community"; \
     } >> /etc/apk/repositories \
-    && apk add --update --no-cache make gcc g++
+    && apk add --update --no-cache make gcc g++ git
