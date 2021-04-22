@@ -1,4 +1,4 @@
-FROM golang:1.15.1-alpine
+FROM golang:1.16.3-alpine
 
 RUN MAIN_VERSION=$(cat /etc/alpine-release | cut -d '.' -f 0-2) \
     && mv /etc/apk/repositories /etc/apk/repositories-bak \
